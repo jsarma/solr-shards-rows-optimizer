@@ -21,7 +21,7 @@ solr indexing. In this simulation, we do the following for each page:
 The shard factor will fall as depth increases due to "the law of large numbers".
 
 # Example
-
+```
 python estimate_shard_rows.py --trial_count 10000 --page_count 10 --rows_per_page 100 --shard_count 12 --accuracy 99.9
 Depth   Shard factor to use at this depth
 100     20%
@@ -34,7 +34,7 @@ Depth   Shard factor to use at this depth
 800     12%
 900     11%
 1000    11%
-
+```
 The above output tells us that if the shard count is 12, and the page size is 100,
 we need to fetch at least 20% of rows to be correct 99.9% of the time on page 1,
 16% on page 2, 15% on page 3, etc...
