@@ -75,12 +75,8 @@
 #   https://tech.shutterstock.com/2017/05/09/efficiently-handling-deep-pagination-in-a-distributed-search-engine
 
 
-import os.path
 import numpy as np
-import scipy.misc
-import pickle
 import argparse
-import math
 from random import randint
 
 np.set_printoptions(suppress=True)
